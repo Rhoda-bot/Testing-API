@@ -1,0 +1,15 @@
+<p>view-profile works!</p>
+<!-- <p class="display-1" *ngFor="let user of filterGetData">{{user.login}}</p> -->
+<div class="col-3 mx-auto">
+    <img src={{filterGetData.avatar_url}}  class="card-img-top" alt="..." width="100%">
+    <p class="text-center"> {{name}}</p>
+</div>
+
+<div class="row ">
+    <div class="col-2 mb-2" *ngFor="let followers of arr">
+      <div class="card animate__animated animate__bounce" >
+        <img src={{followers.avatar_url}} alt="" srcset="">
+        <h4 class="text-center">{{followers.login}}</h4>
+      </div>
+    </div>
+</div>
